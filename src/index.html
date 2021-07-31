@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>皮卡丘的脸</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <style id="demo2"></style>
+    <div id="demo"></div>
+    <div class="buttom">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        .buttom {
+            position: fixed;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            right: 0;
+            top: 10;
+        }
+
+        button {
+            border: none;
+            background: #3ef83e;
+            color: #fff;
+            padding: 4px 15px;
+            font-size: 16px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        #demo2 {
+            display: none;
+        }
+
+        #demo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            width: 100%;
+            border: 1px solid red;
+            height: 50vh;
+        }
+
+        #demo::-webkit-scrollbar {
+            display: none;
+        }
+
+        #html {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+
+        }
+    </style>
+    <div id=html>
+        <div class="skin">
+            <div class="eye left_eye"></div>
+            <div class="eye right_eye"></div>
+            <div class="nose">
+                <div class="yuan"></div>
+            </div>
+            <div class="face left_face">
+                <img src="./images/flash.gif">
+            </div>
+            <div class="face right_face">
+                <img src="./images/flash.gif">
+            </div>
+            <div class="mouse">
+                <div class="up">
+                    <div class="lip left"></div>
+                    <div class="lip right"></div>
+                </div>
+                <div class="down">
+                    <div class="yuan1">
+                        <div class="yuan2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main2.js"></script>
+
+</body>
+
+</html>
